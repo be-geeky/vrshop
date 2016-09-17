@@ -1,0 +1,141 @@
+$thumbnail-border: 0px
+
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap"
+
+.page
+    margin-top: 50px
+
+/**
+ * Article
+ */
+.article_title
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+.article_title, .article_price, .article_button
+    font-weight: bold
+
+.article_image
+    height: 150px
+
+.article_image img
+    max-height: 150px
+    max-width: 100%
+
+.article_box
+    height: 350px
+
+.caption
+    height: 200px
+
+.glyphicon-star-green
+    color: #5AAD00
+
+.glyphicon-star-grey
+    color: #CCCCCC
+
+.article_button
+    border: none
+    border-radius: 0px
+    border-bottom: 2.5px solid #8A004A
+    color: white
+    background-color: #AD005D
+
+.article_domain
+    display: block
+
+%common_button_hover
+    border: none
+    border-radius: 0px
+    border-bottom: 2.5px solid #ab045d
+    background-color: #b34a82
+    color: white
+    outline: 0px
+
+.article_button:hover, .caption .article_button:active, .article_button:focus
+    @extend %common_button_hover
+
+/**
+ * Search bar
+ */
+.search_bar
+    border-radius: 2px
+
+.search_bar *
+    background-color: #F2F2F2
+    border: none
+
+.search_bar .btn
+    font-weight: bold
+
+.search_bar .btn:active, .search_bar .btn:focus
+    outline: 0px
+
+.search_bar input, .search_bar .input-group-addon, .search_bar .input-group-btn
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.125)
+
+.side_bar_panel .search_bar input:focus
+    outline: 0px
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.125)
+    background-color: #dfdede
+
+/**
+ * Side bar
+ */
+.side_bar_panel
+    border: none
+    box-shadow: none
+
+.side_bar_panel .side_bar_header h3
+    font-weight: bold
+    color: #292929
+
+.side_bar_panel .side_bar_header
+    background-color: white
+    border-bottom: 1px solid #292929
+    cursor: pointer
+
+.side_bar_panel li
+    color: grey
+    border: 0px
+    padding: 5px
+
+.side_bar_panel li label
+    margin-bottom: 0px
+    font-weight: normal
+
+.side_bar_panel input[type='radio'], .side_bar_panel input[type='checkbox']
+    margin-top: 0px
+
+/**
+ * Filter button
+ */
+.filter_button
+    @extend .article_button
+    display: block
+    margin: 0px auto
+
+.filter_button:hover, .panel-body form .filter_button:active, .filter_button:focus
+    @extend %common_button_hover
+
+/**
+ * Filter price
+ */
+.filter_price_field
+    border: none
+    font-weight: bold
+
+/**
+ * Pagination
+ */
+.pagination li a, .pagination .disabled span
+    color: #292929
+
+.pagination .active span
+    background-color: #dfdede
+    border-color: #ddd
+
+.pagination .active span:hover
+    background-color: #eeeeee
+    border-color: #ddd
